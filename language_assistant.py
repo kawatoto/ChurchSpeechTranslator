@@ -196,7 +196,7 @@ def stream_data(stream):
 def aws_polly_tts(text):
     t.tic()
     response = polly.synthesize_speech(
-        Engine = 'standard',
+        Engine = 'neural',
         LanguageCode = params['lang_code_for_polly'],
         Text=text,
         VoiceId = params['voice_id'],
